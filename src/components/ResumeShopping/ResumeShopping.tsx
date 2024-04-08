@@ -1,10 +1,11 @@
 import { useShopping } from "@/useContext/shopping/useShopping";
-import CardOfShopping from "../ShoppingCard/ShoppingCard";
+import ShoppingCard from "../ShoppingCard/ShoppingCard";
 import {
   Close,
   Container,
   Finish,
   Products,
+  ShoppingCartEmpty,
   Title,
   TitleAndClose,
   Total,
@@ -30,12 +31,12 @@ const ResumeShopping = ({ closeShopping }: { closeShopping: () => void; }) => {
       <Products>
         {shopping?.length > 0 ? (
           shopping?.map((product) => (
-            <CardOfShopping product={product} key={product.id} />
+            <ShoppingCard product={product} key={product.id} />
           ))
         ) : (
-          <p style={{ color: "#fff", textAlign: "center" }}>
+          <ShoppingCartEmpty>
             Seu carrinho está vazio.
-          </p>
+          </ShoppingCartEmpty>
         )}
       </Products>
 

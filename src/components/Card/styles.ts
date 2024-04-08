@@ -25,7 +25,7 @@ export const TitleAndPrice = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 0.875rem;
-  padding: 0 11px 0 14px;
+  padding: 15px;
 `;
 
 export const Title = styled.h1`

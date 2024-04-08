@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { IProductDetail } from "@/interface/IProductDetail";
 import { useShopping } from "@/useContext/shopping/useShopping";
 import { ContainerProduct,
-  DecreaseAndIncrease,
+  AddAndSubQuant,
   ImgProduct,
+  InformationsGeral,
   MiniCLose,
   NumberShoppingCard,
   Price,
@@ -47,14 +48,14 @@ const ShoppingCard = ({ product }: { product: IProductDetail; }) => {
         alt={"Imagem do produto: " + product.name}
       />
       <TitleProduct>{product.name}</TitleProduct>
-      <div>
+      <InformationsGeral>
         <QuantityText>Qtd:</QuantityText>
         <Quantity>
-          <DecreaseAndIncrease onClick={subPrice} data-testid="subPrice">-</DecreaseAndIncrease>
+          <AddAndSubQuant onClick={subPrice} data-testid="subPrice">-</AddAndSubQuant>
           <NumberShoppingCard data-testid="count">{count}</NumberShoppingCard>
-          <DecreaseAndIncrease onClick={addPrice} data-testid="addPrice">+</DecreaseAndIncrease>
+          <AddAndSubQuant onClick={addPrice} data-testid="addPrice">+</AddAndSubQuant>
         </Quantity>
-      </div>
+      </InformationsGeral>
 
       <Price>R${product.price.split(".")[0]}</Price>
 

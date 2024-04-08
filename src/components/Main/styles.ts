@@ -35,3 +35,9 @@ export const SucessNotification = styled.div`
   border-top-right-radius: 20px;
   color: ${(props) => props.theme.colors?.blue01};
 `;
+
+export const MessageError = styled.p`
+  font-size: 16px;
+  color: ${(props) => props.theme.colors?.white}
+`
+

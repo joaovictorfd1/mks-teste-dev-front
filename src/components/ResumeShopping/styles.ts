@@ -115,3 +115,9 @@ export const Finish = styled.button`
     font-size: 20px;
   }
 `;
+
+export const ShoppingCartEmpty = styled.p`
+  color: white;
+  text-align: center;
+`
+

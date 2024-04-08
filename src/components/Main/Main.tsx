@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useShopping } from "@/useContext/shopping/useShopping";
 import { motion } from "framer-motion";
-import { Container, GridOfProducts, SucessNotification } from "./styles";
+import { Container, GridOfProducts, MessageError, SucessNotification } from "./styles";
 import { useProductsData } from "@/useContext/data/useProductData";
 import Card from "../Card/Card";
 import Skeleton from "../Skeleton/Skeleton";
@@ -27,9 +27,9 @@ const Main = () => {
   if (error)
     return (
       <Container>
-        <p>
+        <MessageError>
           Ops! Aconteceu um erro. Messagem: <strong>{error.message}</strong>
-        </p>
+        </MessageError>
       </Container>
     );
 

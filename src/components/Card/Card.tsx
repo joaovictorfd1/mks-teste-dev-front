@@ -30,7 +30,7 @@ const Card = ({ image, name, price, description, id }: ICard) => {
         onClick={() => buyProduct(id)}
       >
         <motion.div animate={animeScale}>
-          <Image src={Icon} alt="Icon of a bag" width={16} height={16} />
+          <Image src={Icon} alt="Icon of a bag" width={18} height={18} />
         </motion.div>
 
         <Purchase animate={animeScale}>COMPRAR</Purchase>

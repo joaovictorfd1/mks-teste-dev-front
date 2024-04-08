@@ -45,7 +45,7 @@ export const Quantity = styled.div`
   background-color: ${(props) => props.theme.colors?.white};
 `;
 
-export const DecreaseAndIncrease = styled.p`
+export const AddAndSubQuant = styled.p`
   color: ${(props) => props.theme.colors?.black};
   font-size: 16px;
   font-weight: 400;
@@ -78,3 +78,7 @@ export const MiniCLose = styled(Close)`
   font-size: 10px;
   z-index: 1000;
 `;
+
+export const InformationsGeral = styled.div`
+  display: block;
+`
