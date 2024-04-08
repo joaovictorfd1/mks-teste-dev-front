@@ -10,11 +10,12 @@ export const ContainerProduct = styled.div`
   border-radius: 8px;
   background: ${(props) => props.theme.colors?.white};
   box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.05);
+  padding: 12px;
 `;
 
 export const ImgProduct = styled.img`
-  width: 46px;
-  height: 57px;
+  width: 60px;
+  height: 60px;
   background-size: cover;
   background-repeat: no-repeat;
 `;
@@ -28,12 +29,13 @@ export const TitleProduct = styled.p`
 
 export const QuantityText = styled.p`
   color: ${(props) => props.theme.colors?.black};
-  font-size: 7px;
+  font-size: 10px;
   font-weight: 400;
+  padding: 0px 0px 3px 0px;
 `;
 
 export const Quantity = styled.div`
-  width: 55px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,6 +66,7 @@ export const Price = styled.p`
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
+  padding: 10px 0px 0px 0px;
 `;
 
 export const MiniCLose = styled(Close)`
